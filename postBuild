@@ -1,0 +1,16 @@
+#!/bin/bash
+echo "📦 Fetching Synthea EHR data..."
+
+# Create data directory if it doesn't exist
+mkdir -p data
+
+# Download the Synthea data ZIP file
+wget -q https://synthea-open-data.s3.amazonaws.com/coherent/coherent-11-07-2022.zip -O synthea.zip
+
+# Unzip into the data/ folder
+unzip -q synthea.zip -d data
+
+# Clean up the ZIP file
+rm synthea.zip
+
+echo "✅ Synthea data ready in ./data/"
