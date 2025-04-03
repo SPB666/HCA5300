@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "📦 Fetching Synthea EHR data..."
+echo "📦 Fetching Synthea EHR data (+ or - 7 minutes)..."
 
 # Create data directory if it doesn't exist
 mkdir -p data
